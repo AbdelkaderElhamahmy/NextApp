@@ -1,0 +1,194 @@
+.navStyle{
+    padding: 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Libre Franklin, sans-serif ;
+    font-size: 2rem !important;
+    padding-left: 18%;
+    display: flex;
+    box-shadow: 0px 2px 5px #dfdfdf;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.navHeader{
+    font-family: Pacifico, sans-serif !important;
+    font-size: 2rem !important;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+
+.navLinks{
+    text-align: center;
+    line-height: 2rem;
+    padding-left: 37% !important;
+    padding-right: 1rem !important;
+    border-right: 1px solid rgb(233, 233, 233);
+}
+
+.navLinks > a{
+    font-size: 12px ;
+    text-transform:uppercase;
+    font-weight: 550 !important;
+    letter-spacing: 2px;
+    color: grey;
+    padding-left: 2.5rem !important;
+}
+
+.navCart{
+    text-align: center;
+    line-height: 2rem;
+}
+
+.navCart > div > button{
+    font-size: 12px ;
+    text-transform:uppercase;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+    color: grey;
+    padding-left: 1rem !important;
+}
+
+.navCart > div > button:hover, .navLinks > a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navDrop{
+    display: none;
+    text-align: center;
+    line-height: 2rem;
+    padding-left: 34% !important;
+    padding-right: 1rem !important;
+    border-right: 1px solid rgb(233, 233, 233);
+    
+}
+
+.dropDownNav{
+    display: none;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+.dropDownNav2{
+    top: 6rem;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    position: absolute !important;
+    margin-left: -1% !important;
+}
+.dropDownNav > a{
+    font-size: 12px ;
+    text-transform:uppercase;
+    font-weight: 500 !important;
+    letter-spacing: 2px;
+    color: grey;
+    padding: 1rem !important;
+    border-top: 1px solid rgb(233, 233, 233);
+    display: block !important;
+}
+
+.dropDownNav > a:hover{
+    color: rgb(0, 0, 0);
+}
+.cartOpen{
+    position: fixed !important;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    width: 28rem;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+
+}
+.cartOpenTitle{
+    padding:0.5rem 1.5rem;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.2px solid rgb(230, 230, 230);
+}
+.cartOpenbg{
+    position: fixed !important;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 2 ;
+}
+.cartContent {
+    text-align: center;
+    font-size:12px ;
+    margin-top: 50vh;
+}
+.cartOpenTitle > h1{
+    font-size:12px ;
+    align-items: center;
+    text-transform:uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .navStyle{
+        padding-left: 1% !important;
+        justify-content: space-between;
+        padding-left: 1rem;
+    }
+    .nonDrop{
+        display: none;
+    }
+    .navDrop{
+        display: block;
+    }
+ 
+    .navCart{
+        text-align: center;
+        display: flex;
+        line-height: 2rem;
+        padding-right: 0% !important;
+        padding-left: 0%  !important;
+        border-left: 1px solid rgb(233, 233, 233);
+        margin-right: 0 !important;
+    }
+    .navCart >a{
+        display: flex;
+        line-height: 2rem;
+        align-items: center;
+
+    }
+    .navHaeder{
+        padding-left: 0% ;
+        padding-left: 0% ;
+        letter-spacing: 2px;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    .navDrop{
+        padding-left:2rem !important;
+        padding-right:0rem !important;
+        border: none;
+
+    }
+    .dropDownNav{
+        display: block !important;
+    }
+
+  }
+@media only screen and (max-width: 1300px) {
+    .navStyle{
+        padding-left: 1%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .cartOpen{
+        width: 100%;
+    }
+}

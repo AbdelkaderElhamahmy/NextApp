@@ -1,0 +1,43 @@
+.CardImage{
+    width: 350px !important;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Card{
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.Card:hover{
+    border-color: #ac1313;
+    transition: 0.2s;
+}
+
+.CardImage > img {
+    width: 100% !important;
+    display: inline-block !important;
+    transition: 0.5s;
+}
+
+.CardImage > img:hover{
+    transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1.2) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.CardTitle{
+    margin-top: 1rem;
+    color: #6c6c6c;
+}
+
+.CardTitle:hover{
+    color: #ac1313;
+}
+
+.CardCurrency{
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
