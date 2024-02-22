@@ -1,0 +1,302 @@
+
+
+.HSContent{
+    display: flex;
+    padding: 0% 14% !important;
+    background-image: url(../public/heroBackground.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: none !important;
+    width: 100% !important;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-between !important;
+    position: relative !important;
+    z-index: 0 !important;
+    overflow: hidden;
+    padding-right: 10% !important;
+}
+
+.HSContent > div > img{
+    position: relative !important;
+    width: 800px !important;
+    height: auto !important;
+}
+
+.HSContentFont{
+    text-transform:uppercase;
+    color: #d77474;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 450;
+}
+.HSContentFont2{
+    font-weight: normal;
+    font-size: 3.5rem;
+    color: #ac1313;
+    font-family: Playfair Display, sans-serif !important;
+}
+.HSContentFont3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.HSContentPara{
+    margin-top: 0.5rem;
+    color: #6c6c6c ;
+    font-size: 1rem;
+}
+.HSContentbtn{
+    background-color: #ac1313;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+.HSContentbtn:hover{
+    background-color: black !important;
+    transition: 1s !important;
+}
+
+.section02{
+    padding: 8rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.SectionLeft{
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #dbdbdb;
+    margin-top:21rem;
+    margin-left:-2rem;
+    letter-spacing: 2px;
+}
+
+.sectionCenter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 22%;
+}
+
+.sectionCenter > div{
+    width: 220px;
+    height: 220px;
+    color: white;
+    border: 20px solid rgba(0,0,0,0.05);
+    border-width: 30px;
+    border-radius: 240px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 4rem;
+}
+
+.SBLeft{
+    background-color: #e4b366 !important;  
+}
+.SBLeft > a > , .SBLeft > a> img{
+    text-align: center !important;
+}
+.SBCenter{
+    background-color: #f05b10 !important;
+
+}
+.SBRight{
+    background-color: #a21010 !important; 
+}
+.sectionBottom{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 20rem;
+    text-align: left;
+}
+
+.sectionBottom > div {
+    width: 40% !important;
+}
+
+.sectionBottom > div > p{
+    padding-top: 1.5rem;
+    color: #6c6c6c;
+    font-size: 0.9rem;
+}
+
+.sectionBottom > div > h1{
+    font-size: 2rem;
+    font-weight: 450;
+    line-height: 2rem;
+}
+.section03{
+    border-bottom: 1px solid #dbdbdb;
+    padding: 5rem 2rem;
+}
+.S03Content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.S03Top{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.S03Bottom{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.S03TopRight{
+    padding-left: 4rem;
+}
+.S03TopLeft > img, .S03BottomLeft > img{
+    max-width: initial !important;
+}
+.S03TopRight > h1, .S03BottomRight > h1{
+    font-weight: 550;
+}
+.S03BottomRight, .S03TopRight{
+    max-width: 500px;
+}
+.S03BottomRight > p, .S03TopRight >p{
+    padding: 2rem 0rem !important;
+    color: #6c6c6c;
+    font-size: 14px;
+}
+.Section03Right{
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #dbdbdb;
+    margin-top:21rem;
+    letter-spacing: 1px;
+    right: 0 !important;
+}
+.S03ImageBG{
+    display: flex;
+    justify-content: center;
+    width: 27rem;
+    height: 12rem;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+.S03ImageBG > img{
+    display: inline-block;
+    max-width: 100%;
+
+}
+.BottomLeft > img{
+    max-width: 100% !important;
+}
+.section04{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    align-items: center;
+}
+.section04Top{
+    text-align: center;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px 10px 5px 10px;
+    margin-left:10px;
+  }
+.gridItem {
+    padding: 20px 20px 0px 20px;
+    margin-left:10px;
+  }
+@media only screen and (max-width: 1100px)  {
+
+    .sectionCenter{
+        display: flex;
+        padding: 0;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 5rem;
+
+    }
+    .SBHeadr{
+        margin-bottom: 2rem;
+    }
+    .sectionBottom > div {
+        width: 100% !important;
+    }
+    .sectionBottom{
+        padding: 3rem !important; 
+        display: block;
+    }
+    .HSContent{
+        display: block;
+        text-align: center;
+        height: auto !important;
+        padding-top: 12rem !important;
+    }
+    .HSContent >div{
+        padding: 1rem !important;
+    }
+    .HSContentFont3{
+        font-size: 2rem;
+    }
+    .HSContent > div > img{
+        display: inline;
+    } 
+
+    .S03Top{
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .S03Bottom{
+        flex-direction: column-reverse;
+        align-items: start !important;
+    }
+    
+    .S03TopLeft{
+        margin-bottom: 8rem !important;
+    }
+    .S03TopRight{
+        padding-left: 0;
+        max-width: 400px;
+    }
+    .S03BottomRight{
+        padding-left: 0;
+        max-width: 400px;
+    }
+    .S03BottomLeft{
+        margin-bottom: 5rem !important;
+    }
+    .Section03Right{
+        right: 0rem !important;
+    }
+    .gridContainer {
+        grid-template-columns: auto auto;
+      }
+}
+@media only screen and (max-width: 1400px) {
+    .sectionBottom{
+        padding: 5rem 9rem;
+        transition: 0.2s;
+    }
+    .sectionCenter{
+
+        padding: 0px 15%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .gridContainer {
+        grid-template-columns: auto;
+      }
+}
