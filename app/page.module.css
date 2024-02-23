@@ -2,7 +2,7 @@
 
 .HSContent{
     display: flex;
-    padding: 0% 14% !important;
+    padding: 0% 20% !important;
     background-image: url(../public/heroBackground.jpg) ;
     background-size: 100% 100%;
     background-repeat: none !important;
@@ -132,13 +132,15 @@
 }
 .section03{
     border-bottom: 1px solid #dbdbdb;
-    padding: 5rem 2rem;
+    padding: 10rem 0rem;
 }
 .S03Content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
+    padding: 0 20% !important;
+
 }
 .S03Top{
     margin-top: 10rem;
@@ -147,27 +149,29 @@
 }
 
 .S03Bottom{
-    margin-top: 10rem;
+    margin-top: 20rem;
     display: flex;
     align-items: center;
 }
 
-.S03TopRight{
-    padding-left: 4rem;
+
+.S03TopLeft, .S03BottomRight{
+    width:40rem;
 }
 .S03TopLeft > img, .S03BottomLeft > img{
     max-width: initial !important;
 }
 .S03TopRight > h1, .S03BottomRight > h1{
     font-weight: 550;
+    font-size: 1.7rem;
 }
-.S03BottomRight, .S03TopRight{
-    max-width: 500px;
-}
+
 .S03BottomRight > p, .S03TopRight >p{
     padding: 2rem 0rem !important;
     color: #6c6c6c;
-    font-size: 14px;
+    font-weight: 450;
+    max-width: 500px;
+    font-size: 16px;
 }
 .Section03Right{
     font-size: 1rem;
@@ -182,8 +186,8 @@
 .S03ImageBG{
     display: flex;
     justify-content: center;
-    width: 27rem;
-    height: 12rem;
+    width: 35rem;
+    height: 15rem;
     background-color: #f5f5f5;
     align-items: center;
 }
@@ -196,25 +200,42 @@
     max-width: 100% !important;
 }
 .section04{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     margin-top: 8rem;
     margin-bottom: 8rem;
     align-items: center;
+    padding: 0 20% !important;
+
 }
 .section04Top{
     text-align: center;
 }
+.section04Top > h1{
+    margin-bottom: 1rem;
+}
+.section04Cards{
+    margin-top: 2rem;
+}
 .gridContainer {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px 10px 5px 10px;
-    margin-left:10px;
+    justify-content: space-between;
+    /* padding: 10px 10px 5px 10px; */
+    /* margin-left:10px; */
   }
-.gridItem {
-    padding: 20px 20px 0px 20px;
-    margin-left:10px;
+
+  .section05{
+    background-image: url(../public/backGround2.jpeg) ;
+    background-size: 100%  ;
+    background-repeat: no-repeat; 
+    height:25rem;
+  }
+  .section05Top{
+    padding: 7rem 20% 0 20% !important;
+
+
   }
 @media only screen and (max-width: 1100px)  {
 

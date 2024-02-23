@@ -3,7 +3,11 @@ import Navbar from './Components/Navbar/Navbar'
 import style from './page.module.css'
 import Link from 'next/link'
 import Card from './Components/Card/Card'
+import { Checkbox, FormControl, FormControlLabel, FormHelperText, Input, InputLabel, OutlinedInput, useFormControl } from '@mui/material'
+import React from 'react'
 export default function Home() {
+
+
   return (
     <main >
         <Navbar />
@@ -72,7 +76,7 @@ export default function Home() {
             <div className={style.S03Top}>
               <div className={style.S03TopLeft}>
                 <div className={style.S03ImageBG}>
-                <Image src="/vase01.png" width={200} height={200} alt="Vase"/>
+                <Image src="/vase01.png" width={300} height={300} alt="Vase"/>
                 </div>
               </div>
               <div className={style.S03TopRight}>
@@ -89,7 +93,7 @@ export default function Home() {
               </div>
               <div className={style.S03BottomLeft}>
                 <div className={style.S03ImageBG}>
-                  <Image src="/vase02.png" width={280} height={280} alt="Vase"/>
+                  <Image src="/vase02.png" width={370} height={370} alt="Vase"/>
                 </div>
               </div>
             </div>
@@ -113,11 +117,28 @@ export default function Home() {
             <div className={`${style.section04Cards} ${style.gridItem}`}> <Card/></div>
           </div>
         </div>
-        <div className={style.section04}>
-          <div className={style.section04Top}>
-              <h1 className={style.HSContentFont}>Pompeo POttery</h1>
+        <div className={style.section05}>
+          <div className={style.section05Top}>
+              <h1 className={style.HSContentFont}>POMPEO POTTERY</h1>
               <h1 className={style.HSContentFont3}>Ready to start shopping?</h1>  
+              <p className={style.HSContentPara}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
               <button className={style.HSContentbtn}>NEW COLLECTION</button>
+          </div>
+        </div>
+        <div className={style.section06}>
+          <div className={style.section06Top}>
+          <div className={style.SBCenter}>
+              <Link href="/category/mugs">
+                <Image width={60} height={60}  src="/PaperPlane.png" alt="mug" />
+              </Link>
+            </div>
+              <h1 className={style.HSContentFont}>LATEST NEWS</h1>
+              <h1 className={style.HSContentFont3}>Latest news<span className={style.HSContentFont2}> & </span>New updates </h1>  
+              <FormControl>
+                <OutlinedInput placeholder="Please enter text" />
+                <button className={style.HSContentbtn}>Subscribe</button>
+                <FormControlLabel control={<Checkbox defaultChecked />} label="Sign up for our newsletter" />
+              </FormControl>
           </div>
         </div>
     </main>

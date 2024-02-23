@@ -1,12 +1,14 @@
 .CardImage{
-    width: 350px !important;
-    height: 450px;
+    width: auto !important;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
 
 .Card{
     border-bottom: 1px solid #d1d1d1;
+    width: 25rem;
+    margin-bottom: 2rem;
 }
 
 .Card:hover{

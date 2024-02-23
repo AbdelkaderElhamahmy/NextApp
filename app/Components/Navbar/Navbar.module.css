@@ -1,15 +1,16 @@
 .navStyle{
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     margin: 0;
     box-sizing: border-box;
     font-family: Libre Franklin, sans-serif ;
     font-size: 2rem !important;
-    padding-left: 18%;
+    padding: 1.5rem 20%;
     display: flex;
     box-shadow: 0px 2px 5px #dfdfdf;
     background-color: white;
     z-index: 1;
     position: fixed;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -25,9 +26,6 @@
 .navLinks{
     text-align: center;
     line-height: 2rem;
-    padding-left: 37% !important;
-    padding-right: 1rem !important;
-    border-right: 1px solid rgb(233, 233, 233);
 }
 
 .navLinks > a{
@@ -38,10 +36,15 @@
     color: grey;
     padding-left: 2.5rem !important;
 }
-
+.cartHide{
+    display: none;
+}
 .navCart{
     text-align: center;
     line-height: 2rem;
+    border-left: 1px solid rgb(233, 233, 233);
+    padding: 1rem 0;
+    padding-left: 1rem;
 }
 
 .navCart > div > button{
@@ -64,7 +67,6 @@
     padding-left: 34% !important;
     padding-right: 1rem !important;
     border-right: 1px solid rgb(233, 233, 233);
-    
 }
 
 .dropDownNav{
@@ -180,7 +182,9 @@
     .dropDownNav{
         display: block !important;
     }
-
+    .cartHide {
+        padding: 0 !important;
+    }
   }
 @media only screen and (max-width: 1300px) {
     .navStyle{

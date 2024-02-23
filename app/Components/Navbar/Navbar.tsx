@@ -71,40 +71,57 @@ export default function Navbar() {
             </Link>
           </div>
           <div className={`${styles.navLinks} ${styles.nonDrop}`}>
-            {pages.map((item) => (
-              <Link key={item} href={`/${item}`}>
-                {item}
+              <Link key='home' href='/home'> Home </Link>
+              <Link key='About' href='/About'> About </Link>
+              <Link key='Shop' href='/Shop'> Shop </Link>
+              <Link key='Contact' href='/Contact'> Contact </Link>
+              <Link key='Cart' href='#'>          
+                <span className={styles.navCart} >
+                  <span>
+                    <button onClick={openCart}>
+                        <ShoppingCartOutlinedIcon />
+                        Cart
+                    </button>
+                  </span>
+                <span className={styles.navDrop}>
+                  <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={handleClick}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                </span>
+                </span>
               </Link>
-            ))}
           </div>
           <div className={styles.dropDownNav2}>
           <Collapse in={isDropDownOpen} unmountOnExit>
             {dropDown}
           </Collapse>
-        </div>
-          <div className={styles.navCart} >
-            <div>
-                <button onClick={openCart}>
-                    <ShoppingCartOutlinedIcon />
-                    Cart
-                </button>
-            </div>
-            <div className={styles.navDrop}>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                onClick={handleClick}
-              >
-                <MenuIcon />
-              </IconButton>
-            </div>
-
-          </div>
+        </div >
+              <div className={`${styles.navCart} ${styles.cartHide}`}>
+                <div>
+                  <button onClick={openCart}>
+                      <ShoppingCartOutlinedIcon />
+                      Cart
+                  </button>
+                </div>
+                <div className={styles.navDrop}>
+                  <IconButton
+                    size="large"
+                    edge="start"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={handleClick}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                </div>
+              </div>
         </nav>
-
-
       </div>
     );
   };
